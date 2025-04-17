@@ -11,10 +11,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: All things angular
-      uses: AhsanAyaz/angular-deploy-gh-pages-actions@1.4.0
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.4.0
       with:
         github_access_token: ${{ secrets.TOKEN }}
-        build_configuration: staging
+        build_configuration: production
         base_href: https://astgenne4922.github.io/
         deploy_branch: gh-pages
         angular_dist_build_folder: dist/astgenne4922.github.io
