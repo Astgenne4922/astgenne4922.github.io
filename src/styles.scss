@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Demi';
+    src: url('../public/avantgarde_demi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+
+    font-family: 'ITC Avant Garde Gothic Demi';
+}
