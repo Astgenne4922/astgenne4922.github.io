@@ -6,4 +6,6 @@
     [preset]="pattern"
 />
 
-<router-outlet />
+<div [@slideLeftInLeftOut]="route.snapshot.data" style="display: contents">
+    <router-outlet />
+</div>

@@ -1,0 +1,35 @@
+@use "../../variables.scss" as *;
+
+app-lone-div {
+    display: block;
+    margin: 15vh 20px;
+}
+
+#github {
+    animation-name: leFadeInBottom;
+    --lone-div-bg: #{$lone-blue};
+}
+
+#chat {
+    --lone-div-bg: #{$lone-cyan};
+}
+
+#mail {
+    --lone-div-bg: #{$lone-light-green};
+}
+
+p {
+    font-size: 20px;
+    color: $lone-white;
+
+    a,
+    a:active {
+        color: $lone-dark-grey;
+
+        img {
+            vertical-align: middle;
+            border: 1px solid $lone-black;
+            border-radius: 5px;
+        }
+    }
+}

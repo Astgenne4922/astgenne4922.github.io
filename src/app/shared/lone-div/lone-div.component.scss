@@ -1,0 +1,15 @@
+@use "../../../variables.scss" as *;
+
+
+div {
+    display: inline-block;
+
+    padding: 0 10px;
+
+    background-color: var(--lone-div-bg, $lone-dark-grey);
+
+    border-radius: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: $lone-black $lone-red $lone-yellow $lone-green ;
+}
