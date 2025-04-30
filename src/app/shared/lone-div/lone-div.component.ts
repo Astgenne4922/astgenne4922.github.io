@@ -1,12 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-lone-div',
+    selector: 'lone-div',
     templateUrl: './lone-div.component.html',
     styleUrls: ['./lone-div.component.scss'],
 })
-export class LoneDivComponent implements OnInit {
-    constructor() {}
-
-    ngOnInit() {}
-}
+export class LoneDivComponent {}

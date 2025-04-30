@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Location } from '@angular/common';
+import { Component, inject } from '@angular/core';
 import { ActivatedRoute, RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './navbar/navbar.component';
 import { GameOfLifeBgComponent, PATTERN_NAMES } from 'ngx-game-of-life-bg';
 import { slideLeftInLeftOut } from './app.animations';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @Component({
     selector: 'app-root',
@@ -12,7 +13,8 @@ import { slideLeftInLeftOut } from './app.animations';
     animations: [slideLeftInLeftOut],
 })
 export class AppComponent {
-    pattern = PATTERN_NAMES[Math.floor(Math.random() * PATTERN_NAMES.length)];
+    route = inject(ActivatedRoute);
+    location = inject(Location);
 
-    constructor(protected route: ActivatedRoute) {}
+    pattern = PATTERN_NAMES[Math.floor(Math.random() * PATTERN_NAMES.length)];
 }

@@ -1,0 +1,51 @@
+@use "../../../variables.scss" as *;
+
+#grid {
+
+    display: grid;
+    height: 90vh;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+lone-div {
+    display: inline-flex;
+    margin: 20px;
+
+    font-size: 20px;
+
+    input {
+        vertical-align: middle;
+
+        margin: 10px 0;
+        padding: 5px 10px;
+
+        background-color: $lone-orange;
+
+        border: 2px solid $lone-black;
+        border-radius: 3px;
+
+        color: $lone-white;
+        font-size: 18px;
+        font-family: inherit;
+    }
+
+    input[type="button"]:active {
+        transform: translateY(2px);
+    }
+
+    select {
+        appearance: base-select;
+
+        &::picker(select) {
+            appearance: base-select;
+        }
+    }
+
+    & ::ng-deep>div {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

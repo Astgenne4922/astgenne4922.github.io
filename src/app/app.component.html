@@ -1,11 +1,12 @@
 <app-navbar />
 
+@if(location.path() !== "/angular-game-of-life") {
 <ngx-game-of-life-bg
     cellColor="#f8f6e7"
     backgroundColor="#000000"
     [preset]="pattern"
 />
-
+}
 <div [@slideLeftInLeftOut]="route.snapshot.data" style="display: contents">
     <router-outlet />
 </div>

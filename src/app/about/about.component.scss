@@ -1,26 +1,21 @@
 @use "../../variables.scss" as *;
 
-app-lone-div {
+lone-div {
     display: block;
     margin: 15vh 20px;
-}
-
-#github {
-    animation-name: leFadeInBottom;
-    --lone-div-bg: #{$lone-blue};
-}
-
-#chat {
-    --lone-div-bg: #{$lone-cyan};
-}
-
-#mail {
-    --lone-div-bg: #{$lone-light-green};
-}
-
-p {
     font-size: 20px;
-    color: $lone-white;
+
+    &#github {
+        --lone-div-bg: #{$lone-blue};
+    }
+
+    &#chat {
+        --lone-div-bg: #{$lone-cyan};
+    }
+
+    &#mail {
+        --lone-div-bg: #{$lone-light-green};
+    }
 
     a,
     a:active {

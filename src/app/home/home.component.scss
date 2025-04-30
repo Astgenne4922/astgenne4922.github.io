@@ -1,11 +1,8 @@
 @use "../../variables.scss" as *;
 
-app-lone-div {
+lone-div {
     display: block;
     margin: 20px;
 
-    p {
-        font-size: 20px;
-        color: $lone-white;
-    }
+    font-size: 20px;
 }
