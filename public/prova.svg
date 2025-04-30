@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12" height="60" viewBox="0 0 12 60" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <circle id="h" cx="0" cy="0" r="3" fill="#323433"></circle>
+    </defs>
+    <g id="g" transform="translate(3 6)">
+        <use href="#h" transform="translate(0 6) scale(.2)" />
+        <use href="#h" transform="translate(0 12) scale(.3)" />
+        <use href="#h" transform="translate(0 18) scale(.4)" />
+        <use href="#h" transform="translate(0 24) scale(.5)" />
+        <use href="#h" transform="translate(0 30) scale(.6)" />
+        <use href="#h" transform="translate(0 36) scale(.7)" />
+        <use href="#h" transform="translate(0 42) scale(.8)" />
+        <use href="#h" transform="translate(0 48) scale(.9)" />
+        <use href="#h" transform="translate(0 54) scale(1)" />
+    </g>
+    <use href="#g" transform="translate(6 -3)"/>
+</svg>

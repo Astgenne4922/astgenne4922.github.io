@@ -1,0 +1,42 @@
+@use "../../variables.scss" as *;
+
+nav {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: $lone-black;
+
+    font-size: 24px;
+
+    div.title {
+        svg {
+            height: 50px;
+            width: 500px;
+        }
+    }
+
+    div.links {
+        display: flex;
+        flex-direction: row;
+
+        a {
+            padding: 14px 16px;
+
+            text-align: center;
+            text-decoration: none;
+
+            color: $lone-white;
+
+            &:hover:not(.active) {
+                background-color: $lone-yellow;
+            }
+
+            &.active {
+                background-color: $lone-green;
+            }
+        }
+    }
+}

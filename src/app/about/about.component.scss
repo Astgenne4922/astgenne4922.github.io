@@ -1,0 +1,30 @@
+@use "../../variables.scss" as *;
+
+lone-div {
+    display: block;
+    margin: 15vh 20px;
+    font-size: 20px;
+
+    &#github {
+        --lone-div-bg: #{$lone-blue};
+    }
+
+    &#chat {
+        --lone-div-bg: #{$lone-cyan};
+    }
+
+    &#mail {
+        --lone-div-bg: #{$lone-light-green};
+    }
+
+    a,
+    a:active {
+        color: $lone-dark-grey;
+
+        img {
+            vertical-align: middle;
+            border: 1px solid $lone-black;
+            border-radius: 5px;
+        }
+    }
+}

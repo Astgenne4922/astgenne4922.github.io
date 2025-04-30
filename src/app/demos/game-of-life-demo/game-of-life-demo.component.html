@@ -1,0 +1,112 @@
+<ngx-game-of-life-bg
+    #gol
+    [showGrid]="showGrid()"
+    [gridColor]="gridColor()"
+    [backgroundColor]="backgroundColor()"
+    [cellSize]="cellSize()"
+    [cellColor]="cellColor()"
+    [fps]="fps()"
+    [isToroidal]="isToroidal()"
+    [spawnRate]="spawnRate()"
+    [advanceGame]="advanceGame()"
+    [preset]="preset()"
+/>
+
+<div id="grid">
+    <lone-div>
+        <span>
+            FPS:
+            <input type="button" (click)="fpsUp(gol.fps())" value="+" />
+            {{ gol.fps() }}
+            <input type="button" (click)="fpsDown(gol.fps())" value="-" />
+        </span>
+        <span>
+            CELL SIZE:
+            <input type="button" (click)="sizeUp(gol.cellSize())" value="+" />
+            {{ gol.cellSize() }}
+            <input type="button" (click)="sizeDown(gol.cellSize())" value="-" />
+        </span>
+
+        <input
+            type="button"
+            (click)="advanceGame.set(!advanceGame())"
+            [value]="!advanceGame() ? 'RUN' : 'STOP'"
+        />
+    </lone-div>
+
+    <lone-div>
+        <span>
+            CELL COLOR:
+            <input
+                type="color"
+                [ngModel]="cellColor()"
+                (ngModelChange)="cellColor.set($event)"
+            />
+        </span>
+
+        <span>
+            GRID:
+            <input
+                type="button"
+                (click)="showGrid.set(!showGrid())"
+                [value]="!showGrid() ? 'SHOW' : 'HIDE'"
+            />
+        </span>
+        <span>
+            GRID COLOR:
+            <input
+                type="color"
+                [ngModel]="gridColor()"
+                (ngModelChange)="gridColor.set($event)"
+            />
+        </span>
+
+        <span>
+            BACKGROUND COLOR:
+            <input
+                type="color"
+                [ngModel]="backgroundColor()"
+                (ngModelChange)="backgroundColor.set($event)"
+            />
+        </span>
+    </lone-div>
+
+    <lone-div>
+        <select
+            name="patterns"
+            id="patterns"
+            [ngModel]="preset()"
+            (ngModelChange)="changePattern($event)"
+        >
+            @for(p of PATTERNS; track p) {
+            <option [value]="p">{{ p }}</option>
+            }
+        </select>
+        <input type="button" (click)="changePattern()" value="RANDOM PATTERN" />
+
+        <input
+            type="button"
+            (click)="isToroidal.set(!gol.isToroidal())"
+            [value]="!gol.isToroidal() ? 'CONNECT SIDES' : 'DISCONNECT SIDES'"
+        />
+
+        <span>
+            SPAWN RATE:
+            <input
+                type="number"
+                name="rate"
+                id="rate"
+                [ngModel]="spawnRate()"
+                (ngModelChange)="spawnRate.set($event)"
+                min="0"
+                step="0.1"
+                max="1"
+            />
+        </span>
+        <input
+            type="button"
+            (click)="preset.set('random')"
+            value="RANDOM BOARD"
+        />
+    </lone-div>
+</div>
