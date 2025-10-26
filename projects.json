@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Daniele ti fa il CV",
+        "body": "A windows only (for now) application to create and manage a curriculum vitae using Electron. The app works by starting a local backend server (written in ASP.NET) on startup which manages an API to generate the PDF file for the CV and to manipulate user data. The data is displayed and can be modified by the user via the UI (written in Angular)",
+        "buttons": [
+            {
+                "link": "https://github.com/Astgenne4922/Daniele-ti-fa-il-CV",
+                "is_route": false,
+                "badge": "https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white",
+                "alt": "Github"
+            }
+        ]
+    },
+    {
+        "title": "Angular Game of Life Background",
+        "body": "An angular 19+ component that plays Conway's Game of Life while sitting in the background of the page",
+        "buttons": [
+            {
+                "link": "/ng-game-of-life",
+                "is_route": true,
+                "badge": "https://img.shields.io/badge/Demo-grey.svg?style=for-the-badge&logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjEwMHB4IiBoZWlnaHQ9IjEwMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgc3R5bGU9ImJvcmRlci1yYWRpdXM6IDVweDsiIHZlcnNpb249IjEuMSIKICAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iODAiIGZpbGw9IiMxMDEwMTAiIC8+CiAgICA8cmVjdCB4PSIwIiB5PSI4MCIgd2lkdGg9IjMzIiBoZWlnaHQ9IjIwIiBmaWxsPSIjODhjMWIwIiAvPgogICAgPHJlY3QgeD0iMzMiIHk9IjgwIiB3aWR0aD0iMzMiIGhlaWdodD0iMjAiIGZpbGw9IiNlZGE5M2MiIC8+CiAgICA8cmVjdCB4PSI2NiIgeT0iODAiIHdpZHRoPSIzNCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzlhMmQyOCIgLz4KCjwvc3ZnPg==",
+                "alt": "Demo"
+            },
+            {
+                "link": "https://github.com/Astgenne4922/angular-game-of-life",
+                "is_route": false,
+                "badge": "https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white",
+                "alt": "Github"
+            }
+        ]
+    }
+]
