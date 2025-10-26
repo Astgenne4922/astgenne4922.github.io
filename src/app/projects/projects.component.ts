@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
-import { LoneDivComponent } from '../shared/lone-div/lone-div.component';
-import { RouterLink } from '@angular/router';
+import { ProjectComponent } from './project/project.component';
+import * as projects_json from '../../../public/projects.json';
 
 @Component({
     selector: 'app-projects',
-    imports: [LoneDivComponent, RouterLink],
+    imports: [ProjectComponent],
     templateUrl: './projects.component.html',
     styleUrl: './projects.component.scss',
 })
-export class ProjectsComponent {}
+export class ProjectsComponent {
+    projects = (projects_json as any).default;
+}

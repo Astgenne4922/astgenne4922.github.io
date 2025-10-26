@@ -7,43 +7,15 @@
 
     margin: 20px;
 
-    lone-div ::ng-deep>div {
-        display: flex;
-        flex-direction: column;
-
-        height: 100%;
-
-        font-size: 20px;
-
-        .buttons {
-            display: flex;
-            justify-content: flex-end;
-
-            margin-top: auto;
-            margin-bottom: 0;
-
-            a,
-            a:active {
-                margin: 0 10px;
-                color: $lone-dark-grey;
-
-                img {
-                    border: 1px solid $lone-black;
-                    border-radius: 5px;
-                }
-            }
-        }
-    }
-
-    lone-div:nth-child(3n + 1) {
+    app-project:nth-child(3n + 1) {
         --lone-div-bg: #{$lone-blue};
     }
 
-    lone-div:nth-child(3n + 2) {
+    app-project:nth-child(3n + 2) {
         --lone-div-bg: #{$lone-cyan};
     }
 
-    lone-div:nth-child(3n + 3) {
+    app-project:nth-child(3n + 3) {
         --lone-div-bg: #{$lone-light-green};
     }
 }

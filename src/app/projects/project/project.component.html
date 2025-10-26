@@ -1,0 +1,15 @@
+<lone-div>
+    <h1>{{ title() }}</h1>
+    <p>{{ body() }}</p>
+    <div class="buttons">
+        @for (button of buttons(); track $index) { @if(button.is_route) {
+        <a [routerLink]="button.link">
+            <img [src]="button.badge" [alt]="button.alt" />
+        </a>
+        } @else {
+        <a [href]="button.link">
+            <img [src]="button.badge" [alt]="button.alt" />
+        </a>
+        } }
+    </div>
+</lone-div>
