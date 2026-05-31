@@ -1,5 +1,7 @@
 <div id="grid-container">
-    @for(project of projects; track $index) {
-    <app-project [project]="project" />
+    @if (projects.hasValue()) {
+        @for (project of projects.value(); track $index) {
+            <app-project [project]="project" />
+        }
     }
 </div>
