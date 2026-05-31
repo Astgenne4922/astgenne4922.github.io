@@ -28,5 +28,41 @@
         "alt": "Github"
       }
     ]
+  },
+  {
+    "title": "Arch Linux Dotfiles",
+    "body": "My desktop Hyprland based Arch Linux configuration files. It is meant to be used as a quick setup on a fresh Arch installation to reproduce as much as possible my desktop PC environment. In the repo are documented the packages I consider essential to install for my setup",
+    "buttons": [
+      {
+        "link": "https://github.com/Astgenne4922/dotfiles",
+        "is_route": false,
+        "badge": "https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white",
+        "alt": "Github"
+      }
+    ]
+  },
+  {
+    "title": "Sabikui",
+    "body": "A Rust EGUI application designed as an evolution of HashMyFiles by NirSoft. Sabikui is crossplatform and is highly extensible: while HashMyFiles and other similar applications only allow the calculation of a specific set of hash algorithms, Sabikui searches its configuration folder for executables, each one of them a cli application that should get a list of files to hash and should give as output a list of hash values using a specific hash algorithm.",
+    "buttons": [
+      {
+        "link": "https://github.com/Astgenne4922/sabikui",
+        "is_route": false,
+        "badge": "https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white",
+        "alt": "Github"
+      }
+    ]
+  },
+  {
+    "title": "CHIP-8 Interpreter",
+    "body": "A TUI CHIP-8 interpreter written in Rust using Ratatui. It supports every original CHIP-8 instruction (so features specific for other CHIP-8 variants are not garanteed to be supported). The repo contains various ROM gathered from the web for a quick try. It also supports step by step execution and pausing. Should also be crossplatform",
+    "buttons": [
+      {
+        "link": "https://github.com/Astgenne4922/chip-8",
+        "is_route": false,
+        "badge": "https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white",
+        "alt": "Github"
+      }
+    ]
   }
 ]
