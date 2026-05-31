@@ -1,13 +1,18 @@
-import { Component } from '@angular/core';
-import { ProjectComponent } from './project/project.component';
-import * as projects_json from '../../../public/projects.json';
+import { Component, resource } from "@angular/core";
+import { ProjectComponent } from "./project/project.component";
+import { Project } from "./project/project.model";
 
 @Component({
-    selector: 'app-projects',
+    selector: "app-projects",
     imports: [ProjectComponent],
-    templateUrl: './projects.component.html',
-    styleUrl: './projects.component.scss',
+    templateUrl: "./projects.component.html",
+    styleUrl: "./projects.component.scss",
 })
 export class ProjectsComponent {
-    projects = (projects_json as any).default;
+    projects = resource({
+        loader: async () =>
+            fetch(
+                "https://raw.githubusercontent.com/Astgenne4922/astgenne4922.github.io/refs/heads/data/projects.json",
+            ).then((res) => res.json() as Promise<Project[]>),
+    });
 }
